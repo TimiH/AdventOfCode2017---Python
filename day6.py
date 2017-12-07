@@ -51,6 +51,8 @@ def Main():
         cycles += 1
 
     print(cycles)
+    #part2
+    print(cycles - seenStates[tuple(state)])
 
 
 if __name__ == '__main__':
