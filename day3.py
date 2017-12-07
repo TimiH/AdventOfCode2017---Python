@@ -21,12 +21,7 @@
 #     Data from square 1024 must be carried 31 steps.
 #
 # How many steps are required to carry the data from the square identified in your puzzle input all the way to the access port?
-#361527
-
-# Idea:
-# -Recursion
-# -Required steps are easy to calculate once you know (x,y) steps = x+y
-# -formula for x and y, log?, square roots
+# input 361527
 
 import math as m
 
