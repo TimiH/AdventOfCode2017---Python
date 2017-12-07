@@ -35,14 +35,18 @@
 #
 # How many steps does it now take to reach the exit?
 
+from datetime import datetime
 
 def Main():
+    startTime =datetime.now()
     #add Instructions to list
     instructions = open("day5_jumpinstructions.txt",'r')
     commands = []
     for line in instructions:
         commands.append(int(line))
     print(pleaseHelpmeGetOut(commands,0,0))
+
+    print datetime.now() - startTime
 
 def pleaseHelpmeGetOut(commands,start,steps):
     #termination
